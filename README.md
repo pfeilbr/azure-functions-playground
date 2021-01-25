@@ -50,3 +50,4 @@ message(s) in the azure storage queue
 ## Resources
 
 * [Create a JavaScript function from the command line - Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-node?tabs=azure-cli%2Cbrowser)
+* [Azure Functions scale and hosting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) - covers limits and constraints
