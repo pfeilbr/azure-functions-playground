@@ -58,6 +58,8 @@ Managed Identity for Function in Azure Console
 * To access other azure resources/services from a function, you configure a [managed identity](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=dotnet) on the function app and provide access to Azure resources for that identity using Azure role-based access control
 * Use [Key Vault references](https://azure.microsoft.com/en-us/updates/general-availability-of-key-vault-references-in-app-service-and-azure-functions/) to store secrets stored in Key Vault.  They are automatically fetched and provided as environment variables to your function.
 * [Azure Durable Functions documentation](https://docs.microsoft.com/en-us/azure/azure-functions/durable/) - lets you write stateful functions in a serverless compute environment.  Similar to AWS Step Functions, but implemented as language level library.
+* shared access signature (SAS) URLs for granting limited access.  Similar to S3 signed URLs.  See [Grant limited access to data with shared access signatures (SAS) - Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
+    > A shared access signature is a signed URI that points to one or more storage resources. The URI includes a token that contains a special set of query parameters. The token indicates how the resources may be accessed by the client. One of the query parameters, the signature, is constructed from the SAS parameters and signed with the key that was used to create the SAS. This signature is used by Azure Storage to authorize access to the storage resource.
 
 ## Resources
 
