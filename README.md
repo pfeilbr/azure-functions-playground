@@ -47,7 +47,15 @@ message(s) in the azure storage queue
 
 ![](https://www.evernote.com/l/AAF4oT5-alVJf4FWuRgwVkGfjNm54yVrwBQB/image.png)
 
+## Notes
+
+* To access other azure resources/services from a function, you configure a [managed identity](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=dotnet) on the function app and provide access to Azure resources for that identity using Azure role-based access control
+* Use [Key Vault references](https://azure.microsoft.com/en-us/updates/general-availability-of-key-vault-references-in-app-service-and-azure-functions/) to store secrets stored in Key Vault.  They are automatically fetched and provided as environment variables to your function.
+* [Azure Durable Functions documentation](https://docs.microsoft.com/en-us/azure/azure-functions/durable/) - lets you write stateful functions in a serverless compute environment.  Similar to AWS Step Functions, but implemented as language level library.
+
 ## Resources
 
 * [Create a JavaScript function from the command line - Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-node?tabs=azure-cli%2Cbrowser)
 * [Azure Functions scale and hosting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) - covers limits and constraints
+* [Using Managed Identity between Azure Functions and Azure Storage - Code Samples](https://docs.microsoft.com/en-us/samples/azure-samples/functions-storage-managed-identity/using-managed-identity-between-azure-functions-and-azure-storage/)
+* [How to use managed identities for App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity)
