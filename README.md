@@ -43,9 +43,15 @@ func azure functionapp logstream "brianpfeilmyfn01"
 func azure functionapp fetch-app-settings "brianpfeilmyfn01"
 ```
 
+## Screenshots
+
 message(s) in the azure storage queue
 
 ![](https://www.evernote.com/l/AAF4oT5-alVJf4FWuRgwVkGfjNm54yVrwBQB/image.png)
+
+Managed Identity for Function in Azure Console
+
+![](https://www.evernote.com/l/AAGjYBDl3URJ5JbtST8xTEQgGbSTSlwrGWoB/image.png)
 
 ## Notes
 
