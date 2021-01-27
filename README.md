@@ -73,3 +73,4 @@ Managed Identity for Function in Azure Console
 * [Using Managed Identity between Azure Functions and Azure Storage - Code Samples](https://docs.microsoft.com/en-us/samples/azure-samples/functions-storage-managed-identity/using-managed-identity-between-azure-functions-and-azure-storage/)
 * [How to use managed identities for App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity)
 * [Configure function app settings in Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=azurecli#settings)
+* [Source Application Settings from Key Vault](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references#source-application-settings-from-key-vault)
