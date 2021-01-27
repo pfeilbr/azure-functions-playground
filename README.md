@@ -57,6 +57,8 @@ Managed Identity for Function in Azure Console
 
 * app settings can be access via environment variables.  See [Configure function app settings in Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=azurecli#settings)
 * Use [Key Vault references](https://azure.microsoft.com/en-us/updates/general-availability-of-key-vault-references-in-app-service-and-azure-functions/) to store secrets stored in Key Vault.  They are automatically fetched and provided as environment variables to your function.
+    * see [Secure App Settings variables in Azure Functions](https://zimmergren.net/azure-functions-key-vault-reference-azurewebjobsstorage/)
+    * e.g. App Settings Value KeyVault Reference `@Microsoft.KeyVault(SecretUri=https://pfeilkeyvault01.vault.azure.net/secrets/secret01/e0fca4271fb243178a0a861d8e6fbc59)`
 * Functions have in/out [bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp) defined in [`function.json`](LocalFunctionProj/HttpExample/function.json)
 * To access other azure resources/services from a function, you configure a [managed identity](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=dotnet) on the function app and provide access to Azure resources for that identity using Azure role-based access control.  See [Azure Services that support managed identities - Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities).
     * system-assigned managed identity - identity tied to and managed by a specific service.  when that service instance is deleted, the identity is deleted with it.
@@ -73,4 +75,5 @@ Managed Identity for Function in Azure Console
 * [Using Managed Identity between Azure Functions and Azure Storage - Code Samples](https://docs.microsoft.com/en-us/samples/azure-samples/functions-storage-managed-identity/using-managed-identity-between-azure-functions-and-azure-storage/)
 * [How to use managed identities for App Service and Azure Functions](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity)
 * [Configure function app settings in Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=azurecli#settings)
+* [Secure App Settings variables in Azure Functions](https://zimmergren.net/azure-functions-key-vault-reference-azurewebjobsstorage/)
 * [Source Application Settings from Key Vault](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references#source-application-settings-from-key-vault)
