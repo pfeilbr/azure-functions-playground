@@ -1,6 +1,10 @@
 module.exports = async function (context, req) {
-  context.log("JavaScript HTTP trigger function processed a request.");
-  console.log(JSON.stringify(process.env, null, 2));
+  context.log(`JavaScript HTTP trigger function processed a request. v3
+
+  process.env:
+  ${JSON.stringify(process.env)}
+
+  `);
 
   if (req.query.name || (req.body && req.body.name)) {
     // Add a message to the Storage queue,
@@ -19,6 +23,9 @@ module.exports = async function (context, req) {
 
             process.env
             ${JSON.stringify(process.env, null, 2)}
+
+            req
+            ${JSON.stringify(req, null, 2)}
         </code>
       </pre>`,
     };
